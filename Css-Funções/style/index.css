@@ -1,0 +1,58 @@
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.app div {
+    border: 3px solid black;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: aliceblue;
+    background-color: red;
+
+}
+
+
+.app {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.app div {
+    transform: rotate(40deg) translate(100px) scale(2);
+
+}
+
+
+.math {
+    height: 100vh;
+    display: flex;
+    border: solid 1px black;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+
+.math div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+    
+    height: calc(100vh / 2);
+    width: calc(100vh / 2);
+
+
+}
