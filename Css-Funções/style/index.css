@@ -4,6 +4,8 @@ main {
 
     height: 100vh;
     overflow: hidden;
+    background-color: bisque;
+    filter: hue-rotate(180deg);  
 
 }
 
@@ -35,7 +37,7 @@ main {
 .math {
     height: 100vh;
     display: flex;
-    border: solid 1px black;
+    border: solid 1px rgba(124, 38, 38, 0.508);
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -50,9 +52,39 @@ main {
     align-items: center;
     border: 1px solid black;
 
-    
-    height: calc(100vh / 2);
-    width: calc(100vh / 2);
 
+    height: calc(100vh / 3);
+    width: calc(100vh / 5);
+
+   background: linear-gradient(49deg , red, blue);
+
+
+}
+
+.math div:hover {
+    filter: unset;
+}
+
+.fil {
+    display: grid;
+    border: solid 1px black;
+    grid-template-columns: 50% 50%;
+    background-color:
+     color-mix
+    (hsl(10, 100%, 50%),
+     hsl(60, 100%, 50%));
+}
+
+.fil div {
+    border: solid 1px black;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: red;
+    filter: brightness(1) contrast(0.5);
+    filter: drop-shadow(10px 10px 10px red);
+
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+ height: 100vh;
 
 }
